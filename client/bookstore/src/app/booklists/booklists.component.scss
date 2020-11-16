@@ -1,0 +1,51 @@
+.container{
+    width: 70%;
+    border: 1px solid #f3eaea;
+    margin-top: 70px;
+    padding: 20px;
+    margin-left: 16%;
+}
+
+.inner-div {
+    border:  1px solid #f3eaea;
+    margin-bottom: 2%;
+}
+
+.card-img-top{
+    height: 152px;
+    width: 117px;
+    margin-top: 19px;
+    margin-left: 19px;
+}
+
+.card {
+    width: 100% !important;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    font-size: 30px;
+    text-align: center;
+    clear: left;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+a {
+    margin-left: 13px;
+    font-size: 14px;
+}
+
+ul {
+    list-style:none;
+    padding: 0;
+    margin-left: 18px;
+}
+
+.book-title{
+    float:right
+}
+
+.card-text {
+    margin: 18px;
+}

@@ -1,0 +1,16 @@
+.cart-book-img{
+    height: 50%;
+}
+
+.buy-btn { 
+    margin-left: 40%;
+}
+
+.table-bordered {
+    border : 2px solid #c4dcf1;
+}
+
+.table-bordered td, .table-bordered th {
+    border:  2px solid #c4dcf1;
+}
+

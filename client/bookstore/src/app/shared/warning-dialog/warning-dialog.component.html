@@ -1,0 +1,44 @@
+<div *ngIf="data.action=='delete'">
+    <h2 mat-dialog-title style="text-align: center;">My Cart</h2>
+    <mat-dialog-content>
+        
+        <div class="row-delete">
+            <div class="col-xs-12">
+              <p class="alert alert-success">
+                  <strong>Are you sure you want to delete </strong> 
+              </p>
+            </div>
+        </div>
+    
+    </mat-dialog-content>
+    
+    <mat-dialog-actions style="margin-left: 36%;">
+        <button class="mat-raised-button"(click)="close()">Cancel</button>
+        &nbsp; &nbsp;
+        <button class="mat-raised-button mat-primary"(click)="deleteFromCart()">Delete from Cart</button>
+    </mat-dialog-actions>
+</div>
+
+<div *ngIf="data.action=='buy'">
+    <h2 mat-dialog-title  style="text-align: center;">My Books</h2>
+    <mat-dialog-content>
+        
+        <div class="row">
+            <div class="col-xs-12">
+              <p class="alert alert-success">
+                  <strong>Procced to buying?</strong> 
+                  <br>
+                  <strong>Total Price : {{data.price}}</strong> 
+              </p>
+            </div>
+        </div>
+    
+    </mat-dialog-content>
+    
+    <mat-dialog-actions style="margin-left: 36%;">
+        <button class="mat-raised-button"(click)="close()">Cancel</button>
+        &nbsp; &nbsp;
+        <button class="mat-raised-button mat-primary"(click)="buyFromCart()">Buy the Books</button>
+    </mat-dialog-actions>
+
+</div>

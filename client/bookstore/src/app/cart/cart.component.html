@@ -1,0 +1,37 @@
+<div class="container" *ngIf = "booksCart && booksCart.length>0">
+  <h5 style="text-align: center; padding: 2% 0%;">My Cart</h5>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col" colspan="2">Copies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let book of booksCart">
+            <!-- <img src="{{book.img}}" class="cart-book-img">&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <td>{{book.name}}</td>
+            <td>{{book.price}}</td>
+            <td>{{book.number}} &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+              <i class="fa fa-pencil-square-o" aria-hidden="true" (click)="onUpdateQuantity(book)"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-trash" aria-hidden="true" (click)="onBookDelete(book)"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td colspan="2">{{cartSum}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <button class="btn btn-primary buy-btn" routerLink='/books'>Add More to Cart</button>
+        <button class="btn btn-primary buy-btn" (click) = "onBookPurchase()">Buy</button>
+      </div>
+
+</div>
+
+<div class="container" *ngIf = "booksCart && booksCart.length===0" style="text-align: center; margin-top: 2%;">
+<h5>Sorry your Cart is empty...</h5>
+</div>

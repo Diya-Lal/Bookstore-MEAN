@@ -1,0 +1,17 @@
+
+    <h2 mat-dialog-title>My Cart</h2>
+    <mat-dialog-content>
+        
+        <div fxLayout = "column">
+            <form>
+            <label>How many copies of "{{bookDetails[0].name}}" do you want : </label>
+            <input type="number" name="quantity" min="1" max="{{bookDetails[0].copies}}" [(ngModel)]="quantity">
+            </form>
+        </div>
+    
+    </mat-dialog-content>
+    
+    <mat-dialog-actions>
+        <button class="mat-raised-button"(click)="close()">Cancel</button>
+        <button class="mat-raised-button mat-primary"(click)="updatQuantityAndPrice()">Add to Cart</button>
+    </mat-dialog-actions>

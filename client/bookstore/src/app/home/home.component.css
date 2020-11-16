@@ -1,0 +1,20 @@
+.jumbotron{
+    background-image: url("../../assets/books.jpg");
+    background-size: cover;
+    margin-top: 3%;
+    height: 70%;
+    width: 63%;
+    margin-left: 19%;
+}
+
+.lead{
+    margin-left: 11%;
+    padding-top: 35%;
+}
+
+.btn-primary {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87) !important;
+    background-color: #d6e9ec !important;
+    /* background-color: rgb(179 153 153 / 86%) !important; */
+}

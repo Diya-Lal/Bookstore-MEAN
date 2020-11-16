@@ -1,0 +1,10 @@
+
+<div class="row" *ngIf = "data.source == 'from-booklist'">
+    <div class="col-xs-12" style="margin-top: 7%;">
+      <p class="alert alert-success">
+          <strong>{{data.bookItem.copies}} copies of {{data.bookItem.book.name}} added to cart successfully.</strong> 
+          <br>
+          <button  style="margin-left: 36%;" class="mat-raised-button mat-primary"(click)="viewCart()">View Cart</button>
+      </p>
+    </div>
+</div>
