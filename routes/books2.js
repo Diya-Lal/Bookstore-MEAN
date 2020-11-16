@@ -5,7 +5,7 @@ var router = express.Router();
 const MongoClient = require('mongodb').MongoClient;
 
 //Atlas connection string                                                                                                                                        
-// const url = "mongodb+srv://diyalal:mlab1234@cluster0-aaunf.mongodb.net/test?retryWrites=true&w=majority";
+// const url = "";
 // const client = new MongoClient(url);
 
 //router.get('/xxx', function(req, res, next){
