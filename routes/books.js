@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 const { response } = require('express');
-mongoose.connect('mongodb://127.0.0.1/Bookstore',{useNewUrlParser:true})
+mongoose.connect('',{useNewUrlParser:true})
 .then(db => {
     console.log("Database connected");
   }).catch(error => console.log("Could not connect to mongo db " + error));;

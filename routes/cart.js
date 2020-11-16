@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1/Bookstore',{useNewUrlParser:true})
+mongoose.connect('',{useNewUrlParser:true})
 .then(db => {
     console.log("Database connected");
     console.log("Cart");
