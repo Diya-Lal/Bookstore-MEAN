@@ -1,0 +1,43 @@
+
+<div class="container" fxLayout="row" fxLayoutAlign="space-around">
+        <div class="inner-div" *ngFor="let book of bookLists">
+            <div class="card" style="width: 18rem;">
+                    <!-- <img src="{{book.img}}" class="card-img-top" alt="...">
+                    <label class="card-title">{{book.name}}</label>
+                    <div class="card-body">
+                     
+                      <div class="card-text">
+                          <ul>
+                              <li>Year : {{book.year}}</li>
+                              <li>Price : {{book.price}}</li>
+                          </ul>
+                      </div>
+                      <button class="btn btn-primary" [disabled] = "book.copies == 0" (click)="onAddToCart(book.id)">Add to Cart</button>
+                      <div *ngIf = "book.copies == 0"> 
+                         <p>Sorry "{{book.name}}"" is out of stock</p>               
+                    </div> -->
+
+                    <div fxLayout = 'row'>
+                    <img src="{{book.img}}" class="card-img-top" alt="...">
+                    <label  style="text-align: center;" class="card-title">{{book.name}}</label>
+                    </div>
+
+                    <div class="card-text">
+                        <ul>
+                            <li> <h6>Year : {{book.year}}</h6></li>
+                            <li><h6>Price : {{book.price}}</h6></li>
+                        </ul>
+                    </div>
+
+                    <div  class="card-text" *ngIf = "book.copies <= 0">
+                        <h6>Sorry "{{book.name}}"" is out of stock</h6>                        
+                    </div>
+
+                    <div style="text-align: right;">
+                        <button style="margin: 13px;" class="btn btn-primary" [disabled] = "book.copies <= 0" (click)="onAddToCart(book.id)">Add to Cart</button>
+                    </div>
+        
+    </div>
+    </div>
+    
+    
